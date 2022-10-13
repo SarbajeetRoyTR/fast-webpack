@@ -1,0 +1,7 @@
+@use 'sass:map';
+@use '../node_modules/@saffron/styles/tokens/tokens.scss';
+@use '../node_modules/@saffron/styles/tokens/tokensMap.scss';
+
+body {
+    background: purple;
+}

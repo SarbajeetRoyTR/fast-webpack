@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>FAST Webpack</title>
+  </head>
+  <body>
+    <fast-card>
+      <h2>Hello World!</h2>
+      <fast-button appearance="accent">Click Me</fast-button>
+    </fast-card>
+
+<demo-navigation>Test1 Test2 Test3 Test4</demo-navigation>
+
+<fast-demo-card>
+  <h2 slot="heading">We're not ready for another pandemic</h2>
+  <fast-attribution slot="attribution">
+      The Atlantic
+      <img
+          src="//img-s-msn-com.akamaized.net/tenant/amp/entityid/BBY4G4r?w=16&h=16&q=100&m=6&f=png&u=t"
+          alt="The Atlantic"
+          slot="icon"
+      />
+  </fast-attribution>
+  <img
+      src="https://www.bing.com/th?id=ORMS.bbec3ae474a1dbbf78c519c6d136c959&pid=Wdp&w=300&h=225&qlt=60&c=1&rs=1"
+      alt=""
+      slot="feature-media"
+  />
+</fast-demo-card>
+
+
+
+
+
+
+<style>
+      :not(:defined) {
+        visibility: hidden;
+      }
+
+      fast-card {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      h2 {
+        font-size: var(--type-ramp-plus-5-font-size);
+        line-height: var(--type-ramp-plus-5-line-height);
+      }
+
+      fast-card > fast-button {
+        align-self: flex-end;
+      }
+    </style>
+    <script src="dist/bundle.js"></script>
+  </body>
+</html>
